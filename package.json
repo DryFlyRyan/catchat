@@ -1,0 +1,39 @@
+{
+  "name": "catchat",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "eslint-config-airbnb": "^16.1.0",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "node-fetch": "^2.1.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4",
+    "socket.io": "^2.1.1",
+    "xml2js": "^0.4.19"
+  },
+  "scripts": {
+    "start": "PORT=3001 react-scripts start",
+    "start-server": "node ./server/app.js",
+    "start-all": "npm start & npm run start-server",
+    "twin-clients": "PORT=3001 react-scripts start & PORT=3002 react-scripts start & npm run start-server",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}"
+    ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1"
+  }
+}

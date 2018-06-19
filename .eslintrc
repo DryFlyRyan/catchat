@@ -1,0 +1,79 @@
+{
+    "extends": [
+      "airbnb",
+      "plugin:import/errors",
+      "plugin:import/warnings"
+    ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      }
+    },
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "rules": {
+        "arrow-body-style": "off",
+        "arrow-parens": ["warn", "as-needed", { "requireForBlockBody": false }],
+        "camelcase": "warn",
+        "comma-dangle": "off",
+        "constructor-super": "warn",
+        "eol-last": "warn",
+        "function-paren-newline": "off",
+        "indent": "off",
+        "max-len": "off",
+        "no-confusing-arrow": "warn",
+        "no-const-assign": "warn",
+        "no-extra-semi": "warn",
+        "no-nested-ternary": "warn",
+        "no-plusplus": "off",
+        "no-this-before-super": "warn",
+        "no-trailing-spaces": "warn",
+        "no-undef": "warn",
+        "no-underscore-dangle": "off",
+        "no-unneeded-ternary": "warn",
+        "no-unreachable": "warn",
+        "no-unused-vars": "warn",
+        "no-use-before-define": "off",
+        "object-curly-newline": "off",
+        "object-curly-spacing": "warn",
+        "padded-blocks": "warn",
+        "require-yield": "warn",
+        "semi": "warn",
+        "strict": "warn",
+        "valid-typeof": "warn",
+        "import/extensions": "off",
+        "import/no-extraneous-dependencies": "off",
+        "import/no-named-as-default": "off",
+        "import/no-unresolved": "off",
+        "import/prefer-default-export": "off",
+        "react/default-props-match-prop-types": "warn",
+        "react/jsx-indent": "warn",
+        "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+        "react/no-unused-prop-types": "warn",
+        "react/no-unused-state": "warn",
+        "react/prefer-stateless-function": "warn",
+        "react/prop-types": "warn",
+        "react/require-default-props": "warn",
+        "react/self-closing-comp": "warn",
+        "jsx-a11y/accessible-emoji": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "jsx-a11y/click-events-have-key-events": "warn",
+        "jsx-a11y/no-static-element-interactions": "warn"
+    }
+}
